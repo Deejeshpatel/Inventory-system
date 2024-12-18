@@ -1,0 +1,78 @@
+/* AddSupplier.css */
+
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Container */
+.supplier-container {
+    max-width: 500px;
+    margin: 70px auto;
+    padding: 45px 35px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading */
+.supplier-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+/* Form */
+.supplier-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Inputs */
+.supplier-input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.supplier-input:focus {
+    border-color: #1d4ed8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(29, 78, 216, 0.5);
+}
+
+/* Button */
+.supplier-button {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #1d4ed8;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.supplier-button:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .supplier-container {
+        margin: 30px 15px;
+    }
+}

@@ -1,0 +1,59 @@
+/* Header.css */
+
+/* General Styling */
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Modern gradient background */
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo Styling */
+nav img {
+    height: 60px;
+    width: auto;
+    border-radius: 8px; /* Soft-rounded edges */
+    transition: transform 0.3s ease-in-out; /* Hover effect */
+}
+
+nav img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Navigation Links */
+nav .space-x-6 a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav .space-x-6 a:hover {
+    color: #ffdd57; /* Highlight color */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav img {
+        margin-bottom: 10px;
+    }
+}
